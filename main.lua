@@ -32,7 +32,7 @@ local  restore_session = ya.sync(function(state)
     local input = io.open(file_name, "r")
     if input ~= nil then
         for line in input:lines() do
-            if line ~= home and line ~= fs.cwd() then
+            if line ~= home and line ~= cx.active.current.cwd then
                 ya.emit("tab_create", {line})
             end
         end
