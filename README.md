@@ -1,4 +1,9 @@
 # restore-tabs.yazi
+
+> [!Important]
+> This repo was for testing only and it has been archived. If you want this feature, a PR has been made
+> to another plugin that already was addresing tabs. [Repo link](https://github.com/MasouShizuka/close-and-restore-tab.yazi)
+
 ## Description
 [yazi](https://github.com/sxyazi/yazi) plugin that allows to store tabs before exit and restore them with a keybind
 
