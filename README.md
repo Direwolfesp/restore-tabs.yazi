@@ -1,10 +1,16 @@
 # restore-tabs.yazi
+## Description
+[yazi](https://github.com/sxyazi/yazi) plugin that allows to store tabs before exit and restore them with a keybind
 
-### Install
-`ya pkg add Direwolfesp/restore-tabs`
+## Install
+```sh
+ya pkg add Direwolfesp/restore-tabs
+```
 
-### Usage
-add this to you keymap.toml
+## Configuration
+
+Add this to you `keymap.toml`:
+
 ```toml
 [[mgr.prepend_keymap]]
 on = [ "q" ]
