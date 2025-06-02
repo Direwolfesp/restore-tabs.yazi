@@ -1,7 +1,7 @@
 # restore-tabs.yazi
 
 ### Install
-`ya pkg add Direwolfesp/restore-tabs.yazi`
+`ya pkg add Direwolfesp/restore-tabs`
 
 ### Usage
 add this to you keymap.toml
