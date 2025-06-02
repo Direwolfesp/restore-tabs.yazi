@@ -38,6 +38,7 @@ local  restore_session = ya.sync(function(state)
 
         -- delete the first one that its always put by yazi
         ya.emit("tab_close", {0})
+        ya.emit("tab_switch", {0})
 
         input:close()
         info("Session restored successfully")
