@@ -31,11 +31,13 @@ local  restore_session = ya.sync(function(state)
 
     local input = io.open(file_name, "r")
     if input ~= nil then
+        -- add all the tabs
         for line in input:lines() do
-            if line ~= home and line ~= tostring(fs.cwd()) then
-                ya.emit("tab_create", {line})
-            end
+            ya.emit("tab_create", {line})
         end
+
+        -- delete the first one that its always put by yazi
+        ya.emit("tab_close", {0})
 
         input:close()
         info("Session restored successfully")
