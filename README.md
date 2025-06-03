@@ -22,9 +22,9 @@ Add this to you `keymap.toml`:
 on = [ "q" ]
 run = "plugin restore-tabs store_session"
 desc = "Exits yazi and stores the tabs"
+```
 
-[[mgr.prepend_keymap]]
-on = [ "<C-t>" ]
-run = "plugin restore-tabs restore_session"
-desc = "Restores the tabs from last session"
+Add this to you `init.lua:`
+```lua
+require("restore-tabs"):entry({ args = { "restore_session" } })
 ```
