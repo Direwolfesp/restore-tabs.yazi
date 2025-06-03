@@ -7,7 +7,7 @@ local function info(s, ...) ya.notify { title = "restore-session.yazi", content 
 local quit_and_save = ya.sync(function(state)
     -- maybe the path could be improved
     local home = os.getenv("HOME")
-    local file_name = home .. "/.config/yazi/plugins/restore-tabs.yazi/session.txt"
+    local file_name = home .. "/.local/state/yazi/session.txt"
 
     -- iterate each tab
     local output = io.open(file_name, "w")
@@ -27,7 +27,7 @@ end)
 -- Restores and updates the active tabs
 local  restore_session = ya.sync(function(state)
     local home = os.getenv("HOME")
-    local file_name = home .. "/.config/yazi/plugins/restore-tabs.yazi/session.txt"
+    local file_name = home .. "/.local/state/yazi/session.txt"
 
     local input = io.open(file_name, "r")
     if input ~= nil then
